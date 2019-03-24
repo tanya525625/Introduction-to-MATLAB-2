@@ -1,10 +1,10 @@
-a = 0;
+a = 1;
 b = 10;
 n = 100;
-h = (b-a)/n
+h = (b-a)/n;
 x = a:h:b;
 y = zeros(1, length(x));
-y(1)=1;
+y(1) = 1;
 fun = @(x,y)(y^(1/3));
 
 y = Euler(x, y, h, fun);
