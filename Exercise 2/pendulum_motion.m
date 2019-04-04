@@ -1,14 +1,14 @@
-timespan = linspace(1,10,100);
-[T1,x1] = ode45(@pendMotion1, timespan, [0; 5]);
+timespan = linspace(1,50,100);
+[T1,x1] = ode45(@pendMotion1, timespan, [pi; 0]);
 
-timespan = linspace(1,10,100);
-[T2,x2] = ode45(@pendMotion2, timespan, [0; 5]);
+timespan = linspace(1,60,100);
+[T2,x2] = ode45(@pendMotion2, timespan, [pi; 0]);
 
-timespan = linspace(1,10,100);
-[T3,x3] = ode45(@pendMotionLin1, timespan, [0; 3]);
+timespan = linspace(1,50,100);
+[T3,x3] = ode45(@pendMotionLin1, timespan, [pi; 0]);
 
-timespan = linspace(1,10,100);
-[T4,x4] = ode45(@pendMotionLin2, timespan, [0; 3]);
+timespan = linspace(1,30,100);
+[T4,x4] = ode45(@pendMotionLin2, timespan, [pi; 0]);
 
 figure
 grid on;
