@@ -1,7 +1,8 @@
-a = 1;
+a = 0;
 b = 50;
-n = 10;
-h = (b-a)/n;
+% n = 5;
+% h = (b-a)/n;
+h = 1e-5;
 x = a:h:b;
 fun = @(x, y)(-10000*y);
 y = zeros(1, length(x));
